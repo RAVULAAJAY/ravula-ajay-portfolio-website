@@ -1,4 +1,4 @@
-# Ravula Ajay - AI & Full Stack Developer Portfolio
+# Ravula Ajay - Portfolio
 
 A modern, responsive portfolio website showcasing projects, skills, and achievements. Built with React, TypeScript, and Tailwind CSS.
 
