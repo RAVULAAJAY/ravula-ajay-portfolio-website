@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing projects, skills, and achievements. Built with React, TypeScript, and Tailwind CSS.
 
-**Live Demo:** [View Portfolio](http://localhost:8080/)
+**Live Demo:** [View Portfolio](ravula-ajay-portfolio-website.vercel.app)
 
 **GitHub Repository:** [RAVULAAJAY/ravula-ajay-portfolio-website](https://github.com/RAVULAAJAY/ravula-ajay-portfolio-website)
 
