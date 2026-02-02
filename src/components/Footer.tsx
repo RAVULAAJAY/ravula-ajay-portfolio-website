@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 text-primary">
                 Ravula Ajay
               </h3>
               <p className="text-muted-foreground mb-4">

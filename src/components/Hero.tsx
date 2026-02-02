@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 md:pt-24">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -45,12 +45,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <div className="mb-6">
-            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-primary-dark p-1 shadow-elegant animate-pulse-glow overflow-hidden flex items-center justify-center">
+            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-primary-dark p-1 shadow-elegant ring-4 ring-primary/70 overflow-hidden flex items-center justify-center">
               <img src="/About Square.jpg" alt="Ravula Ajay" className="w-full h-full rounded-full object-cover object-center" />
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-primary leading-tight tracking-tight">
             Ravula Ajay
           </h1>
 
