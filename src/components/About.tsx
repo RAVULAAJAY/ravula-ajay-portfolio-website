@@ -14,7 +14,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="animate-slide-in-right">
               <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-elegant">
-                <img src="/About Square.jpg" alt="Ravula Ajay" className="w-full h-full object-cover" style={{ objectPosition: 'center' }} />
+                <img src="/About Square.png" alt="Ravula Ajay" className="w-full h-full object-cover" style={{ objectPosition: 'center' }} />
               </div>
             </div>
 

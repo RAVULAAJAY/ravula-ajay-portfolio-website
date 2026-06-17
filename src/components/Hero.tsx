@@ -6,6 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const fullText = "Building Intelligent, Real-World Solutions";
+  const resumePath = "/Ajay-Ravula.pdf";
   
   useEffect(() => {
     let currentIndex = 0;
@@ -46,7 +47,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <div className="mb-6">
             <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-primary-dark p-1 shadow-elegant ring-4 ring-primary/70 overflow-hidden flex items-center justify-center">
-              <img src="/About Square.jpg" alt="Ravula Ajay" className="w-full h-full rounded-full object-cover object-center" />
+              <img src="/Hero Circle.png" alt="Ravula Ajay" className="w-full h-full rounded-full object-cover object-center" />
             </div>
           </div>
 
@@ -68,7 +69,14 @@ const Hero = () => {
             <Button
               size="lg"
               className="gradient-primary hover:opacity-90 transition-smooth shadow-md hover:shadow-lg group"
-              onClick={() => window.open('/my_resume.pdf', '_blank')}
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = resumePath;
+                link.download = "Ajay-Ravula.pdf";
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+              }}
             >
               <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Download Resume
