@@ -99,11 +99,6 @@ const Hero = () => {
               <div>CS (AIML)</div>
             </div>
             <div className="w-px bg-border" />
-            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl font-bold text-primary">AWS</div>
-              <div>Certified</div>
-            </div>
-            <div className="w-px bg-border" />
             <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <div className="text-3xl font-bold text-primary">10+</div>
               <div>Projects</div>

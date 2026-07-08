@@ -9,51 +9,53 @@ interface Project {
   github?: string;
   demo?: string;
   image?: string;
+  isPrivate?: boolean;
 }
 
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "FarmDirect – Farmer E-Market App",
+      description: "Platform connecting farmers directly to buyers with features like crop listing, buyer-farmer chat, and integrated logistics management.",
+      tech: ["React", "TypeScript", "Node.js", "Firebase", "Socket.IO", "Tailwind CSS"],
+      github: "https://github.com/RAVULAAJAY/Farm-Direct.git",
+      image: "/Farm Direct.png",
+      isPrivate: true,
+    },
+    {
+      title: "Face Recognition Attendance System",
+      description: "Facial recognition-based attendance and student verification system for secure campus access and automated attendance tracking.",
+      tech: ["Python", "OpenCV", "Tkinter", "MySQL", "NumPy", "Pillow", "LBPH"],
+      github: "https://github.com/RAVULAAJAY/Face-Recognition-Attendance-System.git",
+      image: "/Face Recognition Attendance System.png",
+    },
+    {
+      title: "Digital Farm Management Portal",
+      description: "A digital livestock management system that enables farmers, veterinarians, laboratories, and regulators to monitor treatments, compliance, and animal health efficiently.",
+      tech: ["React", "TypeScript", "TanStack", "Tailwind CSS", "Firebase"],
+      github: "https://github.com/RAVULAAJAY/Digital-Farm-Management-Portal.git",
+      image: "/The Digital Farm Management Portal.png",
+    },
+    {
       title: "Online Book Store",
       description: "A full-stack e-commerce platform for purchasing and managing books with cart functionality, user authentication, and payment integration.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/Online-book-store.jpg",
+      github: "https://github.com/RAVULAAJAY/online-book-store.git",
+      image: "/online book store.png",
     },
     {
-      title: "FarmDirect – Farmer E-Market App",
-      description: "Platform connecting farmers directly to buyers with features like crop listing, buyer-farmer chat, and integrated logistics management.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/Farm-direct.jpg",
+      title: "Hire-Me",
+      description: "An AI-powered ATS Resume Analyzer that evaluates resumes against job descriptions, generates ATS scores, identifies skill gaps, and provides personalized improvement recommendations.",
+      tech: ["React", "Node.js", "Express.js", "Tailwind CSS", "OpenAI"],
+      github: "https://github.com/RAVULAAJAY/Hire-Me.git",
+      image: "/Hire Me.png",
     },
     {
-      title: "AI-Powered Student Verification System",
-      description: "Facial recognition and barcode-based student authentication system for secure campus access and attendance tracking.",
-      tech: ["Python", "OpenCV", "TensorFlow", "Flask"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/AI-Powered Student Verification System.webp",
-    },
-    {
-      title: "College Event Management App",
-      description: "QR-based entry system with event registration, real-time attendance tracking, and automated feedback collection.",
-      tech: ["React", "Node.js", "MongoDB", "QR API"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/College Event Management App.jpg",
-    },
-    {
-      title: "Smart Campus Store App",
-      description: "Marketplace platform for students to buy and sell used items with integrated QR code payment system and user ratings.",
-      tech: ["React Native", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/Smart Campus Store App.jpg",
-    },
-    {
-      title: "Sustainability Image Classification",
-      description: "Deep learning CNN model for image classification promoting environmental sustainability awareness and waste management.",
-      tech: ["Python", "TensorFlow", "Keras", "CNN"],
-      github: "https://github.com/RAVULAAJAY",
-      image: "/Sustainability Image Classification.jpg",
+      title: "Real-Time Object Detection",
+      description: "Real-time computer vision application that detects and classifies objects from webcam feeds using YOLOv10, OpenCV, and Supervision with live annotations and confidence scoring.",
+      tech: ["Python", "YOLOv10", "OpenCV", "Ultralytics", "Supervision", "Typer"],
+      github: "https://github.com/RAVULAAJAY/Real-Time-Object-Detection.git",
+      image: "/Real-Time Object Detection.png",
     },
   ];
 
@@ -106,7 +108,13 @@ const Projects = () => {
                         variant="outline"
                         size="sm"
                         className="flex-1 border-primary/30 hover:bg-primary hover:text-primary-foreground"
-                        onClick={() => window.open(project.github, '_blank')}
+                        onClick={() => {
+                          if (project.isPrivate) {
+                            alert('This repository is private. Please contact admin to view the code.');
+                          } else {
+                            window.open(project.github, '_blank');
+                          }
+                        }}
                       >
                         <Github className="mr-2 h-4 w-4" />
                         Code

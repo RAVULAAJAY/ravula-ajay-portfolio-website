@@ -20,10 +20,13 @@ const About = () => {
 
             <div className="space-y-6 animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm <span className="text-primary font-semibold">Ravula Ajay</span>, a passionate B.Tech Computer Science and Engineering student with AIML specialization. I have hands-on experience in building AI-driven and full-stack applications.
+                I'm <span className="text-primary font-semibold">Ravula Ajay</span>, a B.Tech Computer Science and Engineering (AI &amp; ML) student at SR University.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I focus on creating impactful solutions for Education, Agriculture, and Accessibility, leveraging cutting-edge technologies to solve real-world problems.
+                Passionate about Artificial Intelligence, Full-Stack Development, and creating innovative solutions for real-world problems. I have experience developing AI-powered applications and scalable web platforms using modern technologies.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                My interests include AI, web development, agriculture technology, and accessibility-focused solutions that create meaningful impact.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
@@ -47,12 +50,31 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Education</h3>
-                  <p className="text-muted-foreground">
-                    B.Tech - Computer Science and Engineering (AIML)
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    SR University, 2023-2027
-                  </p>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <div className="font-semibold">SR University, Warangal</div>
+                        <div className="text-muted-foreground">B.Tech, Computer Science and Engineering (AI &amp; ML)</div>
+                      </div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap">2023 – 2027</div>
+                    </div>
+
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <div className="font-semibold">Alphores Junior College</div>
+                        <div className="text-muted-foreground">Intermediate (MPC)</div>
+                      </div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap">2021 – 2023</div>
+                    </div>
+
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <div className="font-semibold">Abhyas High School</div>
+                        <div className="text-muted-foreground">Secondary School Certificate (SSC)</div>
+                      </div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap">2021</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -64,15 +86,15 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Certifications</h3>
-                  <p className="text-muted-foreground">
-                    Tcs Ion
-                  </p>
-                  <p className="text-muted-foreground">
-                    Microsoft Azure Fundamentals
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Salesforce
-                  </p>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>Microsoft Azure AI Fundamentals</li>
+                    <li>Salesforce AI Associate</li>
+                    <li>TCS iON</li>
+                    <li>AWS Academy Cloud Foundations</li>
+                    <li>AWS Academy Cloud Architecting</li>
+                    <li>Cisco: Introduction to Networks</li>
+                    <li>Cisco: Introduction to Cybersecurity</li>
+                  </ul>
                 </div>
               </div>
             </Card>

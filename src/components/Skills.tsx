@@ -49,16 +49,19 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
+        { name: "Java", level: 82 },
         { name: "Python", level: 90 },
         { name: "JavaScript", level: 85 },
-        { name: "C++", level: 80 },
+        { name: "TypeScript", level: 80 },
+        { name: "SQL", level: 78 },
       ],
     },
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 88 },
-        { name: "HTML/CSS", level: 92 },
+        { name: "React.js", level: 88 },
+        { name: "HTML5", level: 92 },
+        { name: "CSS3", level: 88 },
         { name: "Tailwind CSS", level: 85 },
       ],
     },
@@ -67,15 +70,23 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 83 },
         { name: "Express.js", level: 80 },
+        { name: "REST APIs", level: 82 },
+        { name: "JWT Authentication", level: 76 },
+        { name: "Socket.IO", level: 70 },
         { name: "MongoDB", level: 85 },
+        { name: "MySQL", level: 75 },
+        { name: "Firebase Firestore", level: 74 },
       ],
     },
     {
       title: "AI/ML & Cloud",
       skills: [
-        { name: "TensorFlow", level: 82 },
+        { name: "Machine Learning Fundamentals", level: 80 },
+        { name: "Generative AI / LLM APIs (OpenAI)", level: 78 },
         { name: "OpenCV", level: 80 },
-        { name: "AWS", level: 78 },
+        { name: "Pandas", level: 82 },
+        { name: "NumPy", level: 82 },
+        { name: "AWS (EC2, S3, IAM, VPC)", level: 78 },
       ],
     },
   ];
@@ -113,7 +124,16 @@ const Skills = () => {
           </div>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["GitHub", "VS Code", "Postman", "scikit-learn"].map((tool, index) => (
+            {[
+              "Git",
+              "GitHub",
+              "VS Code",
+              "Postman",
+              "Vercel",
+              "Render",
+              "NetBeans",
+              "Tkinter",
+            ].map((tool, index) => (
               <Card
                 key={tool}
                 className="p-4 text-center hover:shadow-md transition-smooth animate-fade-in border-primary/10 hover:border-primary/30"
