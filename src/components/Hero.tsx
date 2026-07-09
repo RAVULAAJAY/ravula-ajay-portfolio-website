@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const fullText = "Building Intelligent, Real-World Solutions";
-  const resumePath = "/Ajay-Ravula.pdf";
+  const resumePath = "/Ajay_Resume.pdf";
   
   useEffect(() => {
     let currentIndex = 0;
@@ -72,7 +72,7 @@ const Hero = () => {
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = resumePath;
-                link.download = "Ajay-Ravula.pdf";
+                link.download = "Ajay_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
